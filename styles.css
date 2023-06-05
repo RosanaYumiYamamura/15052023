@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: violet;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+section {
+    padding: 10px;
+    text-align: center;
+}
+
+.entradas {
+    background-color: rgba(255, 106, 0, 0.7);
+    color: black;
+}
+
+.platos-principales {
+    background-color: rgba(123, 31, 162, 0.7);
+    color: black;
+    
+}
+
+.postres {
+    background-color: rgba(0, 170, 255, 0.7);
+    color: black;
+}
+
+.bebidas {
+    background-color: rgba(30, 180, 95, 0.7);
+    color: black;
+}
+
+.Contacto {
+    background-color: rgba(243, 12, 12, 0.7);
+    color: rgb(253, 85, 183);
+}  
+
+.caja {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-align: left;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3bf80c;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: #0056b3;
+  }
+  
+  .boton:active {
+    background-color: #ff0000;
+  }
+  

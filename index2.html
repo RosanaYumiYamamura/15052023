@@ -3,93 +3,34 @@
 
 <head>
     <title>Menú del Restaurante</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css">
 
-        header {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: violet;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .background {
-            animation: slide 20s infinite;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        @keyframes slide {
-            0% {
-                background-image: url('fondo1.jpg');
-            }
-
-            33% {
-                background-image: url('fondo2.jpg');
-            }
-
-            66% {
-                background-image: url('fondo3.jpg');
-            }
-
-            100% {
-                background-image: url('fondo4.jpg');
-            }
-        }
-
-        section {
-            padding: 50px;
-            text-align: center;
-        }
-
-        .entradas {
-            background-color: rgba(255, 106, 0, 0.7);
-            color: black;
-        }
-
-        .platos-principales {
-            background-color: rgba(123, 31, 162, 0.7);
-            color: black;
-        }
-
-        .postres {
-            background-color: rgba(0, 170, 255, 0.7);
-            color: black;
-        }
-
-        .bebidas {
-            background-color: rgba(30, 180, 95, 0.7);
-            color: black;
-        }
-
-        .caja {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
 </head>
 
 <body>
+    
     <header>
-        <div class="background"></div>
+        <div class="slider">
+            <ul>
+                <li><img src="fondo1.jpg" alt=""></li>
+                <li><img src="fondo2.jpg" alt=""></li>
+                <li><img src="fondo3.jpg" alt=""></li>
+                <li><img src="fondo4.jpg" alt=""></li>
+            </ul>
+        </div>
         <h1>Bienvenido al Restaurante de YUMI</h1>
         <p>Disfruta de nuestro delicioso menú</p>
-        <a href="#entradas">Ver entradas</a>
+        <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#platos-principales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+
+        </ul>
+        
     </header>
 
     <section id="entradas" class="entradas">
@@ -101,7 +42,7 @@
                 <li>Lomi-lomi salmon: una ensalada de salmón curado con tomate, cebolla y otros ingredientes frescos.</li>
                 <li>Kalua pig sliders: mini hamburguesas con cerdo asado lentamente, generalmente servidas en pan de taro o pan dulce hawaiano.</li>
             </ul>
-            <a href="#platos-principales">Ver platos principales</a>
+            
         </div>
     </section>
 
@@ -114,7 +55,7 @@
                 <li>Mahi Mahi con salsa de piña: filete de mahi-mahi a la parrilla con una deliciosa salsa de piña y especias tropicales.</li>
                 <li>Plate lunch: un plato típico de Hawaii que combina una proteína (como pollo teriyaki, cerdo asado o pescado frito) con arroz y macarrones estilo hawaiano.</li>
             </ul>
-            <a href="#postres">Ver postres</a>
+            
         </div>
     </section>
 
@@ -127,7 +68,7 @@
                 <li>Malasadas: donas portuguesas fritas y espolvoreadas con azúcar, un dulce popular en Hawaii.</li>
                 <li>Shave ice: un postre refrescante que consiste en hielo raspado cubierto con jarabes de sabores tropicales como piña, maracuyá y guayaba.</li>
             </ul>
-            <a href="#bebidas">Ver bebidas</a>
+            
         </div>
     </section>
 
@@ -140,8 +81,12 @@
                 <li>Piña colada: una bebida tropical que combina ron, jugo de piña y crema de coco.</li>
                 <li>Agua de coco: una opción refrescante y natural para hidratarte, se puede servir directamente en un coco.</li>
             </ul>
-            <a href="#entradas">Volver arriba</a>
+            
         </div>
+    </section>
+    <section id="Contacto" class="Contacto">
+        <div class="caja">
+            <h2><a href="mailto:rosanayumiyamamura1gmail.com" class="boton">Contacto</a></h2>
     </section>
 </body>
 
