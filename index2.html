@@ -20,7 +20,20 @@
                 <li><img src="fondo4.jpg" alt=""></li>
             </ul>
         </div>
-        <h1>Bienvenido al Restaurante de YUMI</h1>
+        
+        <body>
+          <div>
+            <input type="text" id="nameInput" placeholder="Ingresa tu nombre:" oninput="handleChange()">
+            <h1>Bienvenida/o </h1><span id="spanWelcome"></span> al restaurante de YUMI
+          </div><script>
+            function handleChange() {
+              var nameInput = document.getElementById('nameInput');
+              var spanWelcome = document.getElementById('spanWelcome');
+              spanWelcome.textContent = nameInput.value;
+            }
+          </script>
+        </
+        
         <p>Disfruta de nuestro delicioso menú</p>
         <ul>
             <li><a href="#entradas">Entradas</a></li>
@@ -87,6 +100,7 @@
     <section id="Contacto" class="Contacto">
         <div class="caja">
             <h2><a href="mailto:rosanayumiyamamura1gmail.com" class="boton">Contacto</a></h2>
+        
     </section>
 </body>
 
